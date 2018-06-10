@@ -44,7 +44,7 @@ ggplot()+
   geom_point(aes(x = dataset$Level, y = dataset$Salary),colour = 'red')+
   geom_line(aes(x = dataset$Level, y = predict(poly_reg,newdata = dataset)),
             colour = 'blue')+
-  ggtitle('Truth or Bluff (Linear Regression)')+
+  ggtitle('Truth or Bluff (Polynomial Regression)')+
   xlab('Position')+
   ylab('Salary')
 
